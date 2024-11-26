@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Marks and Percentage Calculator (MAKAUT)</h2>
+        <div class="form-group">
+            <label for="oddPoints">Odd Semester Total Credit Points:</label>
+            <input type="number" id="oddPoints" placeholder="Enter odd semester points" required>
+        </div>
+        <div class="form-group">
+            <label for="evenPoints">Even Semester Total Credit Points:</label>
+            <input type="number" id="evenPoints" placeholder="Enter even semester points" required>
+        </div>
+        <div class="form-group">
+            <label for="oddCredits">Total Credits in Odd Semester:</label>
+            <input type="number" id="oddCredits" placeholder="Enter odd semester credits" required>
+        </div>
+        <div class="form-group">
+            <label for="evenCredits">Total Credits in Even Semester:</label>
+            <input type="number" id="evenCredits" placeholder="Enter even semester credits" required>
+        </div>
+        <div class="form-group">
+            <label for="numSubjects">Number of Subjects:</label>
+            <input type="number" id="numSubjects" placeholder="Enter number of subjects" required>
+        </div>
+        <button class="btn" onclick="calculate()">Calculate</button>
+        <div class="output" id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
